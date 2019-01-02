@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>jsonp</title>
+</head>
+<body>
+    <div id="data">data</div>
+    <script>
+        var jsonp = function(src, cb, callback, data) {
+            var script = document.createElement('script')
+            var randomCallback = 'callback' + parseInt(Math.random() * 10000)
+            window[randomCallback] = function(res) {
+                console.log('window'+randomCallback)
+                callback(res)
+            }
+            src = data ? src + '?' + cb + '=' + randomCallback + '&' + data : src + '?' + cb + '=' + randomCallback
+            script.src = src
+            document.body.appendChild(script);
+            script.onload = function() {
+                setTimeout(function(){
+                    script.remove()
+                    delete window[randomCallback]
+                }, 100) 
+            }
+        }
+    </script>
+    <script>
+        jsonp('http://localhost:8000', 'callback', function(res){
+            document.getElementById('data').innerHTML = JSON.stringify(res)
+        })
+    </script>
+</body>
+</html>
