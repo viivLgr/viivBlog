@@ -20,8 +20,17 @@ client.js
 
 ```javascript
 const http = require('http')
+const url = require('url')
+const fs = require('fs')
 const client = http.createServer((req, res) => {
-    res.end('client')
+    if(req.url !== '/favicon.ico') {
+        const {pathname} = url.parse(req.url, true)
+        if(parhname === '/') {
+            let result = fs.readFileSync('./index.html', 'utf-8')
+            res.setHeader('Content-Type', 'text/html')
+            res.end(result)
+        }
+    }
 })
 client.listen({port: 8000})
 module.exports = client
@@ -31,8 +40,11 @@ server.js
 
 ```javascript
 const http = require('http')
+const url = require('url')
 const server = http.createServer((req, res) => {
-    res.end('server')
+    const {query} = url.parse(req.url, true)
+    const callback = query.callback
+    res.end(`${callback}({ret: true, data: []})`)
 })
 server.listen({port: 9000})
 module.exports = server

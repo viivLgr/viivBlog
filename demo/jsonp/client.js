@@ -10,7 +10,6 @@ const server = http.createServer((req, res) => {
             res.end(result);
         }
     }
-    res.end('client');
 })
 
 server.listen({port: 8000})
