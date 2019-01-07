@@ -101,10 +101,38 @@
 // console.log('第三辆车离开')
 // park.out(car3)
 
+// -------工厂模式-----------
+// import { Creator } from './design/factory/index'
 
-import { Creator } from './design/factory/index'
+// let creator = new Creator()
+// let p = creator.create('p1')
+// p.init()
+// p.fn1()
 
-let creator = new Creator()
-let p = creator.create('p1')
-p.init()
-p.fn1()
+// ------------单例模式----------------
+// import {SingleObject} from './design/singleObject/SingleObject'
+
+// let obj1 = SingleObject.getInstance()
+// obj1.login()
+
+// let obj2 = SingleObject.getInstance()
+// obj2.login()
+// console.log('obj1 === obj2', obj1 === obj2) // 两者必须完全相等
+
+// console.log('--分隔--')
+// let obj3 = new SingleObject()  // 无法完全控制
+// obj3.login()
+// console.log('obj1 === obj3', obj1 === obj3)
+
+
+// -------------单例模式：登录框-----------
+
+import {LoginForm} from './design/singleObject/loginForm'
+
+const login1 = LoginForm.getInstance()
+login1.show()
+
+const login2 = LoginForm.getInstance()
+login2.hide()
+
+console.log('login1 === login2', login1 === login2)
