@@ -25,11 +25,25 @@
 // var $p = $('p')
 // console.log('p', $p)
 
-import {House, A, B} from './uml/index'
+// import {House, A, B} from './uml/index'
 
-// 测试
-let aHouse = new House('北京')
-let a = new A('aaa', aHouse)
-console.log(a)
-let b = new B('bbb')
-console.log(b)
+// // 测试
+// let aHouse = new House('北京')
+// let a = new A('aaa', aHouse)
+// console.log(a)
+// let b = new B('bbb')
+// console.log(b)
+
+
+import { loadImg } from './design/promise'
+
+let src = 'https://github.com/viivLgr/viivBlog/blob/master/images/uml-2.png?raw=true'
+
+loadImg(src).then(img => {
+    console.log(`width: ${img.width}`)
+    return img
+}).then(img => {
+    console.log(`height: ${img.height}`)
+}).catch(err => {
+    console.log('err', err)
+})
