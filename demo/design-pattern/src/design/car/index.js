@@ -22,7 +22,6 @@ export class SpecialCar extends Car {
 export class Trip{
     constructor(car) {
         this.car = car
-        console.log('car')
     }
     start() {
         alert(`行程开始：车主姓名：${this.car.name}, 车牌号：${this.car.number}`)
