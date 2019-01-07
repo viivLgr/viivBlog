@@ -127,12 +127,18 @@
 
 // -------------单例模式：登录框-----------
 
-import {LoginForm} from './design/singleObject/loginForm'
+// import {LoginForm} from './design/singleObject/loginForm'
 
-const login1 = LoginForm.getInstance()
-login1.show()
+// const login1 = LoginForm.getInstance()
+// login1.show()
 
-const login2 = LoginForm.getInstance()
-login2.hide()
+// const login2 = LoginForm.getInstance()
+// login2.hide()
 
-console.log('login1 === login2', login1 === login2)
+// console.log('login1 === login2', login1 === login2)
+
+// ----------测试适配器模式------------
+import { Target } from './design/adaptee/index'
+let target = new Target()
+let result = target.request()
+console.log('result', result)
