@@ -122,5 +122,3 @@ export class Lot {
 
 // console.log('第二辆车离开')
 // park.out(car2)
-
-

@@ -57,7 +57,7 @@
 // trip.start()
 // trip.end(5)
 
-import { Park, Floor, Lot, Car } from './design/car/2'
+import { Park, Floor, Lot, Car } from './design/car/2.test'
 
 // ----------------------测试----------------------
 // 初始化停车场
