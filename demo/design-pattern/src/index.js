@@ -35,15 +35,24 @@
 // console.log(b)
 
 
-import { loadImg } from './design/promise'
+// import { loadImg } from './design/promise'
 
-let src = 'https://github.com/viivLgr/viivBlog/blob/master/images/uml-2.png?raw=true'
+// let src = 'https://github.com/viivLgr/viivBlog/blob/master/images/uml-2.png?raw=true'
 
-loadImg(src).then(img => {
-    console.log(`width: ${img.width}`)
-    return img
-}).then(img => {
-    console.log(`height: ${img.height}`)
-}).catch(err => {
-    console.log('err', err)
-})
+// loadImg(src).then(img => {
+//     console.log(`width: ${img.width}`)
+//     return img
+// }).then(img => {
+//     console.log(`height: ${img.height}`)
+// }).catch(err => {
+//     console.log('err', err)
+// })
+
+import { FastCar, SpecialCar, Trip } from './design/car/index'
+
+const fastCar = new FastCar('seek', '浙A123456')
+const specialCar = new SpecialCar('viiv', '浙A111222')
+
+const trip = new Trip(specialCar)
+trip.start()
+trip.end(5)
