@@ -57,46 +57,54 @@
 // trip.start()
 // trip.end(5)
 
-import { Park, Floor, Lot, Car } from './design/car/2.test'
+// import { Park, Floor, Lot, Car } from './design/car/2.test'
 
-// ----------------------测试----------------------
-// 初始化停车场
-const floors = []
-for(let i = 0; i < 3; i++) {
-    const lots = []
-    for(let j = 0; j < 100; j++) {
-        lots[j] = new Lot()
-    }
-    floors[i] = new Floor(i+1, lots)
-}
+// // ----------------------测试----------------------
+// // 初始化停车场
+// const floors = []
+// for(let i = 0; i < 3; i++) {
+//     const lots = []
+//     for(let j = 0; j < 100; j++) {
+//         lots[j] = new Lot()
+//     }
+//     floors[i] = new Floor(i+1, lots)
+// }
 
-const park = new Park(floors)
-console.log(park)
+// const park = new Park(floors)
+// console.log(park)
 
-// 初始化车辆
-const car1 = new Car(100)
-const car2 = new Car(89)
-const car3 = new Car(12)
+// // 初始化车辆
+// const car1 = new Car(100)
+// const car2 = new Car(89)
+// const car3 = new Car(12)
 
-console.log('第一辆车进入')
-console.log(park.emptyNum())
-park.in(car1, 2)
+// console.log('第一辆车进入')
+// console.log(park.emptyNum())
+// park.in(car1, 2)
 
-console.log('第二辆车进入')
-console.log(park.emptyNum())
-park.in(car2, 1)
-
-
-console.log('第一辆车离开')
-park.out(car1)
-
-console.log('第二辆车离开')
-park.out(car2)
+// console.log('第二辆车进入')
+// console.log(park.emptyNum())
+// park.in(car2, 1)
 
 
-console.log('第三辆车进入')
-console.log(park.emptyNum())
-park.in(car3, 1)
+// console.log('第一辆车离开')
+// park.out(car1)
 
-console.log('第三辆车离开')
-park.out(car3)
+// console.log('第二辆车离开')
+// park.out(car2)
+
+
+// console.log('第三辆车进入')
+// console.log(park.emptyNum())
+// park.in(car3, 1)
+
+// console.log('第三辆车离开')
+// park.out(car3)
+
+
+import { Creator } from './design/factory/index'
+
+let creator = new Creator()
+let p = creator.create('p1')
+p.init()
+p.fn1()
