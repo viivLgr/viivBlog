@@ -168,5 +168,12 @@
 // import './design/proxy/readImg'
 
 // // ------代理模式-明星经纪人----------------
-import './design/proxy/proxyStar'
+// import './design/proxy/proxyStar'
+
+
+// // ------观察者模式----------------
+// import './design/observer/index'
+
+// // ------观察者模式--nodejs--------------
+import './design/observer/nodejs'
 
