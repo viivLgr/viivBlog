@@ -161,4 +161,12 @@
 // import './design/decorator/log'
 
 // // ------装饰器模式-core-decorators----------------
-import './design/decorator/core-decorators'
+// import './design/decorator/core-decorators'
+
+
+// // ------代理模式-readImg----------------
+// import './design/proxy/readImg'
+
+// // ------代理模式-明星经纪人----------------
+import './design/proxy/proxyStar'
+

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div id="div1">
+        <a href="#">a1</a>
+        <a href="#">a2</a>
+        <a href="#">a3</a>
+        <a href="#">a4</a>
+        <a href="#">a5</a>
+    </div>
+    <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        // var div1 = document.getElementById('div1')
+        // div1.addEventListener('click', function(e) {
+        //     var target = e.target
+        //     if(target.nodeName === 'A'){
+        //         alert(target.innerHTML)
+        //     }
+        // })
+
+        // $('#div1').click(function() {
+        //     setTimeout(function() {
+        //         console.log('this', $(this)) // 指向window
+        //         $(this).css('backgroundColor', 'yellow')
+        //     }, 1000)
+        // })
+
+        // $('#div1').click(function() {
+        //     var _this = this
+        //     setTimeout(function() {
+        //         console.log('this', $(_this)) // div1
+        //         $(_this).css('backgroundColor', 'yellow')
+        //     }, 1000)
+        // })
+
+        $('#div1').click(function() {
+            var fn = function() {
+                console.log('this', $(this))
+                $(this).css('backgroundColor', 'yellow')
+            }
+            fn = $.proxy(fn, this) // 改变this指向
+            setTimeout(fn, 1000)
+        })
+    </script>
+</body>
+</html>
