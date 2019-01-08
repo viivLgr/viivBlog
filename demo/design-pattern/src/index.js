@@ -138,7 +138,27 @@
 // console.log('login1 === login2', login1 === login2)
 
 // ----------测试适配器模式------------
-import { Target } from './design/adaptee/index'
-let target = new Target()
-let result = target.request()
-console.log('result', result)
+// import { Target } from './design/adaptee/index'
+// let target = new Target()
+// let result = target.request()
+// console.log('result', result)
+
+
+
+// // ---------------装饰器模式----------------
+// import './design/decorator/index'
+
+// // ---------------装饰器模式-ES7语法----------------
+// import './design/decorator/Demo'
+
+// // -----装饰器模式-ES7语法-mixins----------------
+// import './design/decorator/mixin'
+
+// // ------装饰器模式-ES7语法-readonly----------------
+// import './design/decorator/readonly'
+
+// // ------装饰器模式-ES7语法-log----------------
+// import './design/decorator/log'
+
+// // ------装饰器模式-core-decorators----------------
+import './design/decorator/core-decorators'
