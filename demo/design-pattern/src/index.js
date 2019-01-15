@@ -175,5 +175,14 @@
 // import './design/observer/index'
 
 // // ------观察者模式--nodejs--------------
-import './design/observer/nodejs'
+// import './design/observer/nodejs'
+
+// // ------迭代器模式--iterator--------------
+// import './design/iterator/index'
+
+// // ------迭代器模式--es6 iterator--------------
+// import './design/iterator/es6-iterator'
+
+// // ------迭代器模式--es6 for...of--------------
+import './design/iterator/es6-for-of'
 
