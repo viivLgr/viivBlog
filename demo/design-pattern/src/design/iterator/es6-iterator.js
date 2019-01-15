@@ -1,9 +1,11 @@
 function each(data) {
+    // 生成遍历器
     let iterator = data[Symbol.iterator]()
     let item = {done: false}
     while(!item.done) {
         item = iterator.next()
         // 最后一个 done: true
+        // console.log(item)
         if(!item.done) {
             console.log(item)
         }

@@ -184,5 +184,8 @@
 // import './design/iterator/es6-iterator'
 
 // // ------迭代器模式--es6 for...of--------------
-import './design/iterator/es6-for-of'
+// import './design/iterator/es6-for-of'
+
+// // ------迭代器模式--es6 generator--------------
+import './design/iterator/es6-generator'
 
