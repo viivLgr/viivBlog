@@ -187,5 +187,14 @@
 // import './design/iterator/es6-for-of'
 
 // // ------迭代器模式--es6 generator--------------
-import './design/iterator/es6-generator'
+// import './design/iterator/es6-generator'
+
+// // ------状态模式 红绿灯--------------
+// import './design/state/color'
+
+// // ------状态模式 javascript-state-machine --------------
+// import './design/state/stateMachine'
+
+// // ------状态模式 promise --------------
+import './design/state/promise'
 
