@@ -196,5 +196,11 @@
 // import './design/state/stateMachine'
 
 // // ------状态模式 promise --------------
-import './design/state/promise'
+// import './design/state/promise'
+
+// // ------原型模式 prototype --------------
+// import './design/prototype/index'
+
+// // ------桥接模式 color --------------
+import './design/bridge/index'
 
