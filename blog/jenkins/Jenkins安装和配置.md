@@ -25,28 +25,28 @@
 
 - 选择要安装的插件，建议安装的插件有点多会慢一些，不清楚需要什么插件的可以选择这个
 
-![安装插件](https://github.com/viivLgr/viivBlog/blob/master/images/jenkins_03.jpg)
+![安装插件](https://github.com/viivLgr/viivBlog/blob/master/images/jenkins_03.png)
 
 - 创建一个管理员用户
 
-![创建一个管理员用户](https://github.com/viivLgr/viivBlog/blob/master/images/jenkins_04.jpg)
+![创建一个管理员用户](https://github.com/viivLgr/viivBlog/blob/master/images/jenkins_04.png)
 
 - 实例配置
 
-![实例配置](https://github.com/viivLgr/viivBlog/blob/master/images/jenkins_05.jpg)
+![实例配置](https://github.com/viivLgr/viivBlog/blob/master/images/jenkins_05.png)
 
 - 配置完成，可以进行访问了
 
-![配置完成，可以进行访问了](https://github.com/viivLgr/viivBlog/blob/master/images/jenkins_06.jpg)
+![配置完成，可以进行访问了](https://github.com/viivLgr/viivBlog/blob/master/images/jenkins_06.png)
 
 - 登录之后，进行系统配置
 
-![主面板，点击创建任务](https://github.com/viivLgr/viivBlog/blob/master/images/jenkins_09.jpg)
+![主面板，点击创建任务](https://github.com/viivLgr/viivBlog/blob/master/images/jenkins_09.png)
 
 - 根据FTP或SFTP选择不同的传输方式，FTP为FTP方式,SFTP为SSH传输
 - 因为我需要使用SSH传输的方式进行线上部署，所以需要安装`Publish Over SSH`插件
 
-![主面板，点击创建任务](https://github.com/viivLgr/viivBlog/blob/master/images/jenkins_10.jpg)
+![主面板，点击创建任务](https://github.com/viivLgr/viivBlog/blob/master/images/jenkins_10.png)
 
 安装FTP工具连接服务器，这里我用的是yummyFTP[下载](https://pan.baidu.com/s/1xU0WcX5TUUQ6GY3kk_Sp1w) 密码`ml3j`包含注册码。
 连接上自己的服务器
@@ -54,26 +54,26 @@
 ## 实例配置
 
 - 新建一个任务，命名
-![新建任务](https://github.com/viivLgr/viivBlog/blob/master/images/jenkins_08.jpg)
+![新建任务](https://github.com/viivLgr/viivBlog/blob/master/images/jenkins_08.png)
 
 - 选择自由风格的
 
-![新建任务,选择ziyou风格](https://github.com/viivLgr/viivBlog/blob/master/images/jenkins_12.jpg)
+![新建任务,选择ziyou风格](https://github.com/viivLgr/viivBlog/blob/master/images/jenkins_12.png)
 
 - 选择源码方式，我这里使用的svn，将svn地址准确填写，并且设置svn账户
 
-![源码选择SVN，配置](https://github.com/viivLgr/viivBlog/blob/master/images/jenkins_13.jpg)
+![源码选择SVN，配置](https://github.com/viivLgr/viivBlog/blob/master/images/jenkins_13.png)
 
 - 在系统设置中添加此任务的服务器FTP传输地址信息，注意这里有两种方式：一种FTP、一种SSH。写清楚对应的server名，host地址，用户名，密码,选择端口号，然后点击test测试是否连接成功。
 
-![ftp传输配置](https://github.com/viivLgr/viivBlog/blob/master/images/jenkins_10.jpg)
+![ftp传输配置](https://github.com/viivLgr/viivBlog/blob/master/images/jenkins_10.png)
 
-![sftp选择SSH传输配置](https://github.com/viivLgr/viivBlog/blob/master/images/jenkins_13.jpg)
+![sftp选择SSH传输配置](https://github.com/viivLgr/viivBlog/blob/master/images/jenkins_13.png)
 
 - 在任务设置中选择系统设置中对应的FTP Server,填写要上传的文件类型,应用保存即可。
 
-![构建后上传](https://github.com/viivLgr/viivBlog/blob/master/images/jenkins_15.jpg)
+![构建后上传](https://github.com/viivLgr/viivBlog/blob/master/images/jenkins_15.png)
 
 - 在主面板找到此任务,点击立即构建,即可上传成功
 
-![立即构建](https://github.com/viivLgr/viivBlog/blob/master/images/jenkins_16.jpg)
+![立即构建](https://github.com/viivLgr/viivBlog/blob/master/images/jenkins_16.png)
