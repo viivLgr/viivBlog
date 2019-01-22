@@ -79,3 +79,6 @@
 - 在主面板找到此任务,点击立即构建,即可上传成功
 
 ![立即构建](https://github.com/viivLgr/viivBlog/blob/master/images/jenkins_16.png)
+
+
+### 构建成功之后 在
