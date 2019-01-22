@@ -62,17 +62,18 @@
 
 - 选择源码方式，我这里使用的svn，将svn地址准确填写，并且设置svn账户
 
-[源码选择SVN，配置](https://github.com/viivLgr/viivBlog/blob/master/images/jenkins_13.jpg)
+![源码选择SVN，配置](https://github.com/viivLgr/viivBlog/blob/master/images/jenkins_13.jpg)
 
 - 在系统设置中添加此任务的服务器FTP传输地址信息，注意这里有两种方式：一种FTP、一种SSH。写清楚对应的server名，host地址，用户名，密码,选择端口号，然后点击test测试是否连接成功。
 
-[ftp传输配置](https://github.com/viivLgr/viivBlog/blob/master/images/jenkins_10.jpg)
-[sftp选择SSH传输配置](https://github.com/viivLgr/viivBlog/blob/master/images/jenkins_13.jpg)
+![ftp传输配置](https://github.com/viivLgr/viivBlog/blob/master/images/jenkins_10.jpg)
+
+![sftp选择SSH传输配置](https://github.com/viivLgr/viivBlog/blob/master/images/jenkins_13.jpg)
 
 - 在任务设置中选择系统设置中对应的FTP Server,填写要上传的文件类型,应用保存即可。
 
-[构建后上传](https://github.com/viivLgr/viivBlog/blob/master/images/jenkins_15.jpg)
+![构建后上传](https://github.com/viivLgr/viivBlog/blob/master/images/jenkins_15.jpg)
 
 - 在主面板找到此任务,点击立即构建,即可上传成功
 
-[立即构建](https://github.com/viivLgr/viivBlog/blob/master/images/jenkins_16.jpg)
+![立即构建](https://github.com/viivLgr/viivBlog/blob/master/images/jenkins_16.jpg)
