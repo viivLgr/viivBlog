@@ -202,5 +202,11 @@
 // import './design/prototype/index'
 
 // // ------桥接模式 color --------------
-import './design/bridge/index'
+// import './design/bridge/index'
+
+// // ------策略模式 user --------------
+// import './design/strategy/index'
+
+// // ------职责链模式 请假 --------------
+import './design/due/index'
 
