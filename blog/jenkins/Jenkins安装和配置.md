@@ -27,17 +27,17 @@
 
 ![安装插件](https://github.com/viivLgr/viivBlog/blob/master/images/jenkins_03.png)
 
-- 创建一个管理员用户
-
 ![创建一个管理员用户](https://github.com/viivLgr/viivBlog/blob/master/images/jenkins_04.png)
 
-- 实例配置
+- 创建一个管理员用户
 
 ![实例配置](https://github.com/viivLgr/viivBlog/blob/master/images/jenkins_05.png)
 
-- 配置完成，可以进行访问了
+- 实例配置
 
 ![配置完成，可以进行访问了](https://github.com/viivLgr/viivBlog/blob/master/images/jenkins_06.png)
+
+- 配置完成，可以进行访问了
 
 - 登录之后，进行系统配置
 
@@ -51,6 +51,8 @@
 安装FTP工具连接服务器，这里我用的是yummyFTP[下载](https://pan.baidu.com/s/1xU0WcX5TUUQ6GY3kk_Sp1w) 密码`ml3j`包含注册码。
 连接上自己的服务器
 
+![ftpgo工具连接服务器](https://github.com/viivLgr/viivBlog/blob/master/images/jenkins_17.png)
+
 ## 实例配置
 
 - 新建一个任务，命名
@@ -62,11 +64,11 @@
 
 - 选择源码方式，我这里使用的svn，将svn地址准确填写，并且设置svn账户
 
-![源码选择SVN，配置](https://github.com/viivLgr/viivBlog/blob/master/images/jenkins_13.png)
+![源码选择SVN，配置](https://github.com/viivLgr/viivBlog/blob/master/images/jenkins_14.png)
 
 - 在系统设置中添加此任务的服务器FTP传输地址信息，注意这里有两种方式：一种FTP、一种SSH。写清楚对应的server名，host地址，用户名，密码,选择端口号，然后点击test测试是否连接成功。
 
-![ftp传输配置](https://github.com/viivLgr/viivBlog/blob/master/images/jenkins_10.png)
+![ftp传输配置](https://github.com/viivLgr/viivBlog/blob/master/images/jenkins_11.png)
 
 ![sftp选择SSH传输配置](https://github.com/viivLgr/viivBlog/blob/master/images/jenkins_13.png)
 
