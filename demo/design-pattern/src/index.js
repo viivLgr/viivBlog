@@ -211,5 +211,8 @@
 // import './design/due/index'
 
 // // ------命令模式 发布任务 --------------
-import './design/command/index'
+// import './design/command/index'
+
+// // ------中介模式 --------------
+import './design/mediator/index'
 
