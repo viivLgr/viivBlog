@@ -208,5 +208,8 @@
 // import './design/strategy/index'
 
 // // ------职责链模式 请假 --------------
-import './design/due/index'
+// import './design/due/index'
+
+// // ------命令模式 发布任务 --------------
+import './design/command/index'
 
