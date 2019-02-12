@@ -1,0 +1,20 @@
+[
+    {
+        "id": 1,
+        "name": "《viiv》",
+        "price": 149,
+        "discount": 1
+    },
+    {
+        "id": 2,
+        "name": "《seek》",
+        "price": 19,
+        "discount": 1
+    },
+    {
+        "id": 3,
+        "name": "《xiaohua》",
+        "price": 49,
+        "discount": 0
+    }
+]

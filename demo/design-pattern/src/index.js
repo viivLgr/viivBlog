@@ -214,5 +214,11 @@
 // import './design/command/index'
 
 // // ------中介模式 --------------
-import './design/mediator/index'
+// import './design/mediator/index'
 
+// // ------设计模式综合示例 购物车 --------------
+// import App from './demo-cart/App'
+import App from './cart/App'
+
+let app = new App('app')
+app.init()
