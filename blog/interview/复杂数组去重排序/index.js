@@ -4,8 +4,23 @@ function getArray(arr) {
     return arr.flat(Infinity)
 }
 
+Array.prototype.flat = function() {
+    return [].concat(...this.map(item => (Array.isArray(item) ? item.flat() : [item])))
+}
+
+function flatten(arr) {
+    while(arr.some(item => Array.isArray(item))) {
+        arr = [].concat(...arr)
+    }
+    return arr
+}
+
 function removeDup(arr) {
     return [...new Set(arr)]
+}
+
+Array.prototype.unique = function() {
+    return [...new Set(this)]
 }
 
 function sort(arr, flag) {
