@@ -8,10 +8,10 @@
 
 - [介绍下 Set、Map、WeakSet 和 WeakMap 的区别？](https://github.com/viivLgr/viivBlog/blob/master/blog/interview/%E4%BB%8B%E7%BB%8D%E4%B8%8BSet%E3%80%81Map%E3%80%81WeakSet%E5%92%8CWeakMap%E7%9A%84%E5%8C%BA%E5%88%AB.md)
 
-- [介绍下深度优先遍历和广度优先遍历，如何实现？]()
-- [请分别用深度优先思想和广度优先思想实现一个拷贝函数？]()
+- [介绍下深度优先遍历和广度优先遍历，如何实现？]() 【未完成】
+- [请分别用深度优先思想和广度优先思想实现一个拷贝函数？]() 【未完成】
 
-- [复杂数组去重排序]()
+- [复杂数组去重排序](https://github.com/viivLgr/viivBlog/tree/master/blog/interview/%E5%A4%8D%E6%9D%82%E6%95%B0%E7%BB%84%E5%8E%BB%E9%87%8D%E6%8E%92%E5%BA%8F)
 > 已知如下数组：
 var arr = [ [1, 2, 2], [3, 4, 5, 5], [6, 7, 8, 9, [11, 12, [12, 13, [14] ] ] ], 10];
 编写一个程序将数组扁平化去并除其中重复部分数据，最终得到一个升序且不重复的数组
