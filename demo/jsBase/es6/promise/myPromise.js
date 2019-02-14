@@ -179,7 +179,7 @@ function Promise (executor) {
         if(this.state === 'pending') {
             this.state = 'fulfilled'
             this.value = value
-            this.onResolvedCallbacks.forEach(function(fn) => {
+            this.onResolvedCallbacks.forEach(function(fn){
                 fn()
             })
         }
