@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <p>jquery test 1</p>
+    <p>jquery test 2</p>
+    <p>jquery test 3</p>
+    <div id="div1">
+        <p>jquert test in div</p>
+    </div>
+    <script src="./jquery-3.2.1.js"></script>
+    <!-- <script src="./zepto-1.2.0.js"></script> -->
+    <!-- <script src="./my.zepto.js"></script> -->
+    <!-- <script src="./my.jquery.js"></script> -->
+    <!-- <script>
+        var $p = $('p')
+        $p.css('color', 'red')
+        console.log($p.html())
+        console.log('p',$p)
+        console.log('getNodeName', $p.getNodeName())
+    </script> -->
+    <script>
+        // 扩展插件
+        $.fn.getNodeName = function(){
+            return this[0].nodeName
+        }
+        var $p = $('p')
+        $p.css('color', 'red')
+        console.log($p.html())
+        console.log('p',$p)
+        console.log('getNodeName', $p.getNodeName())
+    </script>
+</body>
+</html>
