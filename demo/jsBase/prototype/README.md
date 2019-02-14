@@ -2,7 +2,7 @@
 
 入口函数 -> 构造函数 -> 构造函数的原型
 
-## zetpo 关于原型部分源码
+## zepto 关于原型部分源码
 
 ```javascript
 (function(window){

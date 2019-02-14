@@ -9,6 +9,10 @@
 
 - [设计模式](https://github.com/viivLgr/viivBlog/blob/master/blog/jsBase/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F.md)
 
+- [根据zepto和jquery源码了解prototype](https://github.com/viivLgr/viivBlog/tree/master/demo/jsBase/prototype)
+- [js 模拟call，apply，bind](https://github.com/viivLgr/viivBlog/tree/master/demo/jsBase/js%E6%A8%A1%E6%8B%9Fcall%2Capply%2Cbind%E5%87%BD%E6%95%B0)
+- [异步](https://github.com/viivLgr/viivBlog/tree/master/demo/jsBase/%E5%BC%82%E6%AD%A5)
+
 ## 基础工具
 
 - [jsonp](https://github.com/viivLgr/viivBlog/issues/2)   [blog](https://github.com/viivLgr/viivBlog/blob/master/blog/jsBase/%E5%8E%9F%E7%94%9FJavaScript%E5%B0%81%E8%A3%85jsnop%E8%AF%B7%E6%B1%82.md)

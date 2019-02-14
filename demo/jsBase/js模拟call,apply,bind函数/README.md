@@ -37,3 +37,7 @@ Function.prototype.myCall = function(context) {
     return result
 }
 ```
+
+## 模拟 apply
+
+由于 apply 和 call 仅仅是传参不同，区别是apply(context, array)， call(context, arg1, arg2...)
