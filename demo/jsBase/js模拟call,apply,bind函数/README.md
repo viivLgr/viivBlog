@@ -28,7 +28,7 @@ Function.prototype.myCall = function(context) {
         args.push('arguments[' + i + ']')
     }
 
-    // 4. 重点！！！ 
+    // 4. 重点！！！
     // 执行 context[fn] 这个函数，只能用 eval，因为 myCall 的入参参数不确定
     var result = eval('context[fn](' + args + ')') // args 是一个数组，但是当它和字符串相加时自动调用内部的 toString 方法转成字符串
     delete context[fn] // 用完后从 context 上删除这个函数
@@ -41,3 +41,82 @@ Function.prototype.myCall = function(context) {
 ## 模拟 apply
 
 由于 apply 和 call 仅仅是传参不同，区别是apply(context, array)， call(context, arg1, arg2...)
+
+```javascript
+Function.prototype.newApply = function(context, array) {
+    if(typeof context === 'object') {
+        context = context || window
+    } else {
+        context = Object.create(null)
+    }
+
+    var fn = +new Date() + '' + Math.random()
+    context[fn] = this
+
+    // 重点！！！
+    var args = null
+    if(array){
+        args = []
+        for(var i = 0; i < array.length; i++){
+            args.push('array[' + i + ']')
+        }
+    }
+
+    var result = eval('context[fn](' + args + ')')
+
+    delete context[fn]
+
+    return result;
+}
+```
+
+## 模拟bind
+
+bind 在外面包层function 壳
+
+```javascript
+Function.prototype.myBind = function(context) {
+    if(typeof context === 'object') {
+        context = context || window
+    } else {
+        context = Object.create(null)
+    }
+
+    var fn = +new Date() + '' + Math.random()
+    context[fn] = this
+
+    var args = []
+    for(var i = 1; i < arguments.length; i++) {
+        args.push('arguments[' + i + ']')
+    }
+
+    // 重点！！！
+
+    return function() {
+        var result = eval('context[fn](' + args + ')')
+        delete context[fn]
+        return result
+    }
+}
+
+// 或者使用前面写好的
+Function.prototype.newBindAndApply = function(context) {
+    var args = []
+    for(var i = 1; i < arguments.length; i++) {
+        args.push(arguments[i])
+    }
+    return function() {
+        Function.prototype.newApply(context, args)
+    }
+}
+
+Function.prototype.newBindAndCall = function(context){
+    var args = []
+    for(var i = 1; i < arguments.length; i++) {
+        args.push('arguments[' + i + ']')
+    }
+    return function() {
+        eval('Function.prototype.newCall(context,' + args + ')')
+    }
+}
+```

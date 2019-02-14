@@ -10,13 +10,6 @@ Function.prototype.newApply = function(context, array) {
 
     // 重点！！！
     var args = null
-    // if(arguments[1]){
-    //     args = []
-    //     for(var i = 0; i < arguments[1].length; i++) {
-    //         args.push('argument[1][' + i + ']')
-    //     }
-    // }
-
     if(array){
         args = []
         for(var i = 0; i < array.length; i++){
@@ -24,7 +17,9 @@ Function.prototype.newApply = function(context, array) {
         }
     }
 
-    var result = eval('context[fn](' + args + ')')
+    // 这个函数，只能用 eval，因为 myCall 的入参参数不确定
+    // var result = eval('context[fn](' + args + ')')
+    var result = context[fn](args)
 
     delete context[fn]
 

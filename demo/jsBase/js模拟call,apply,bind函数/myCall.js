@@ -41,6 +41,7 @@ Function.prototype.newCall = function(context) {
         args.push('arguments[' + i + ']')
     }
 
+    // 这个函数，只能用 eval，因为 myCall 的入参参数不确定
     var result = eval('context[fn](' + args + ')')
     
     delete context[fn]
