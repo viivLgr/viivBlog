@@ -11,6 +11,7 @@
 
 - [根据zepto和jquery源码了解prototype](https://github.com/viivLgr/viivBlog/tree/master/demo/jsBase/prototype)
 - [js 模拟call，apply，bind](https://github.com/viivLgr/viivBlog/tree/master/demo/jsBase/js%E6%A8%A1%E6%8B%9Fcall%2Capply%2Cbind%E5%87%BD%E6%95%B0)
+- [js 模拟 promise](https://github.com/viivLgr/viivBlog/tree/master/demo/jsBase/es6/promise)
 - [异步](https://github.com/viivLgr/viivBlog/tree/master/demo/jsBase/%E5%BC%82%E6%AD%A5)
 
 ## 基础工具
