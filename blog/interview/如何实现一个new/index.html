@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // function _new(fn, ...arg) {
+        //     var obj = Object.create(fn.prototype);
+        //     fn.call(obj, ...arg);
+        //     return obj;
+        // }
+        // function _new(fn, ...arg) {
+        //     var obj = Object.create(fn.prototype);
+        //     fn.call(obj, ...arg);
+        //     let result = fn();
+        //     return Object.prototype.toString.call(result) == '[object Object]' ? result : obj;
+        // }
+
+        function _new(fn, ...arg) {
+            const obj = Object.create(fn.prototype)
+            console.log('constructor', obj.__proto__ === fn.prototype)
+            fn.call(obj, ...arg)
+            return obj
+        }
+        function Person(name, age) {
+            this.name = name;
+            this.age = age;
+        }
+        Person.prototype.eat = function() {
+            console.log(this.name + ' eat!')
+        }
+
+        var seek = new Person('seek', 12)
+        var viiv = _new(Person, 'viiv', 'age')
+
+        console.log('seek.name', seek.name) // seek
+        console.log('viiv.name', viiv.name) // undefined
+    </script>
+</body>
+</html>

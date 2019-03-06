@@ -2,6 +2,32 @@
 
 我是mac环境，参考文章[使用jenkins实现持续集成](https://www.cnblogs.com/zishengY/p/7170656.html)
 
+## 安装之后的一些操作命令
+
+### 查看用户目录
+
+```shell
+/Users/Shared/Jenkins/Home/users
+```
+
+### 启动Jenkins
+
+```shell
+sudo launchctl load /Library/LaunchDaemons/org.jenkins-ci.plist
+```
+
+### 停止Jenkins
+
+```shell
+sudo launchctl unload /Library/LaunchDaemons/org.jenkins-ci.plist
+```
+
+### 修改Jenkins端口
+
+```shell
+sudo defaults write /Library/Preferences/org.jenkins-ci httpPort 7071
+```
+
 ## 下载Jenkins
 
 [官网](https://jenkins.io/)下载

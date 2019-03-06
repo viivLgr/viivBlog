@@ -1,24 +1,49 @@
 module.exports = {
     entry: {
-        index: "./js/index"
+        index: "./ts/index"
     },
     output: {
         filename: "[name].js"
     },
     devtool: 'source-map',
     resolve: {
-        extensions: [".js"]
+        extensions: [".ts"]
     },
     module: {
-        loader: [
+        rules: [
+            // {
+            //     test: /\.js$/,
+            //     use: {
+            //         loader: "babel-loader",
+            //         options: {
+            //             presets: ["es2015"]
+            //         }
+            //     },
+            //     exclude: /node_modules/
+            // },
             {
-                test: /\.js$/,
-                loader: "babel",
-                exclude: "node_module",
-                query: {
-                    presets: ["es2015"]
-                }
+                test: /\.ts$/,
+                use: [
+                    {
+                        loader: "babel-loader",
+                        options: {
+                            presets: ["es2015"]
+                        }
+                    },
+                    "ts-loader"
+                ],
+                exclude: /node_modules/
             }
         ]
+        // loader: [
+        //     {
+        //         test: /\.js$/,
+        //         loader: "babel",
+        //         exclude: "node_module",
+        //         query: {
+        //             presets: ["es2015"]
+        //         }
+        //     }
+        // ]
     }
 }

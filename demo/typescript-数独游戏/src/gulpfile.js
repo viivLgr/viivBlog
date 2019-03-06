@@ -4,15 +4,16 @@ const gulp = require('gulp');
 gulp.task("webpack", () => {
     const webpack = require("webpack-stream");
     const config = require("./webpack.config.js");
-    gulp.src("./js/**/*.js")
-        .pipe(webpack(config))
+    // gulp.src("./js/**/*.js")
+    return gulp.src("./ts/**/*.ts")
+        .pipe(webpack(config, require("webpack")))
         .pipe(gulp.dest("../www/js"))
 });
 
 // 编译 less => css
 gulp.task("less", () => {
     const less = require("gulp-less")
-    gulp.src("./less/**/*.less")
+    return gulp.src("./less/**/*.less")
         .pipe(less())
         .pipe(gulp.dest("../www/css"))
 });
