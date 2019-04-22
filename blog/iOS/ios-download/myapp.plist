@@ -40,6 +40,8 @@
                     <string>software</string>
                     <key>title</key>
                     <string><![CDATA[旅行e贷]]></string>
+                    <key>subtitle</key>
+                    <string><![CDATA[APP]]></string>
                 </dict>
             </dict>
         </array>
