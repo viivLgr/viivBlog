@@ -11,7 +11,6 @@
                         <key>kind</key>
                         <string>software-package</string>
                         <key>url</key>
-                        <!-- http或者https链接的ipa文件地址 -->
                         <string><![CDATA[http://sys-down.oss-cn-shanghai.aliyuncs.com/lxed/ios.ipa?Expires=1555905751&OSSAccessKeyId=TMP.AgGK-DOaITOSvsLnqZRxrciI4j1ppVZ2jqw2NZoJN3AF4l5NGX3m_WVMq_1bADAtAhUAn_lMTKdczmsknDAAcpdwzXGYN1gCFArHmvm6FiCQth2aIrmF_nDjLzkh&Signature=mVLS5zNkalQ%2Fu3qtSs4oB0HSC%2BI%3D]]></string>
                     </dict>
                     <dict>
@@ -20,7 +19,6 @@
                         <key>needs-shine</key>
                         <true/>
                         <key>url</key>
-                        <!-- http或者https链接的图片地址，可直接使用app对应的icon（分辨率没强制要求） -->
                         <string><![CDATA[http://x5.justep.com/apps/x5.png]]></string>
                     </dict>
                     <dict>
@@ -29,22 +27,18 @@
                         <key>needs-shine</key>
                         <true/>
                         <key>url</key>
-                        <!-- http或者https链接的小图片地址，可直接使用app对应的icon（分辨率没强制要求） -->
                         <string><![CDATA[http://x5.justep.com/apps/x5.png]]></string>
                     </dict>
                 </array>
                 <key>metadata</key>
                 <dict>
                     <key>bundle-identifier</key>
-                    <!-- BundleID，就是新建app时的包名 -->
                     <string>com.seed.youpin</string>
                     <key>bundle-version</key>
-                    <!-- 版本号 -->
                     <string><![CDATA[1.0.0]]></string>
                     <key>kind</key>
                     <string>software</string>
                     <key>title</key>
-                    <!-- 安装app时的提示信息 -->
                     <string><![CDATA[旅行e贷]]></string>
                 </dict>
             </dict>
