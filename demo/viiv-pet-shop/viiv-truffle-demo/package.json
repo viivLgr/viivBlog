@@ -1,0 +1,40 @@
+{
+  "name": "viiv-truffle-demo",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "bignum": "^0.13.0",
+    "ganache-cli": "^6.4.2",
+    "mocha": "^5.2.0",
+    "onchange": "^5.2.0",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-scripts": "2.1.8",
+    "rimraf": "^2.6.2",
+    "solc": "0.4.24",
+    "web3": "^1.0.0-beta.34"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "precompile": "rimraf src/compiled/*",
+    "compile": "node scripts/compile.js",
+    "precompile:w": "yarn compile",
+    "compile:w": "onchange 'contracts/*.sol' -- yarn compile",
+    "test:w": "mocha --watch",
+    "rebuild": "yarn compile && mocha",
+    "prerebuild:w": "yarn rebuild",
+    "rebuild:w": "onchange 'contracts/*.sol' 'test/*.js' -- yarn rebuild"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
+}

@@ -1,0 +1,3 @@
+jsipfs
+
+jsipfs daemon
