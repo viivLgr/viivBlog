@@ -2,7 +2,7 @@ const path = require('path');
 const assert = require('assert');
 const Web3 = require('web3');
 const ganache = require('ganache-cli');
-
+const BigNumber = require('bignum');
 const web3 = new Web3(ganache.provider());
 
 // 引入合约的json
@@ -128,5 +128,11 @@ describe('测试课程的智能合约', () => {
 
         const detail3 = await course.methods.getDetail().call({from: accounts[3]});
         assert.equal(detail3[9], 2); // 未购买
+    })
+    it('还没上线，购买的课不入账', async () => {
+        const oldBlance = await web3.eth.getBlance(accounts[0])
+        await course.methods.buy().send({
+            from: account[3],
+        })
     })
 })
