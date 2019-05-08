@@ -19,3 +19,5 @@
 - [jsonp](https://github.com/viivLgr/viivBlog/issues/2)   [参考blog](https://github.com/viivLgr/viivBlog/blob/master/blog/jsBase/%E5%8E%9F%E7%94%9FJavaScript%E5%B0%81%E8%A3%85jsnop%E8%AF%B7%E6%B1%82.md)
 
 - [Jenkins 安装和配置](https://github.com/viivLgr/viivBlog/blob/master/blog/jenkins/Jenkins%E5%AE%89%E8%A3%85%E5%92%8C%E9%85%8D%E7%BD%AE.md)
+
+- [浏览器唤起iOS应用下载](https://github.com/viivLgr/viivBlog/tree/master/blog/iOS/ios-download)
