@@ -30,7 +30,7 @@
                         <true/>
                         <key>url</key>
                         <!-- 注意！这里是应用图标的图片路径 全尺寸 可有可无 -->
-                        <string><![CDATA[http://bbdh5.papahuan.com:8084/resource/e-loan.56d068aa.png]]></string>
+                        <string><![CDATA[http://xxx.png]]></string>
                     </dict>
                     <dict>
                         <key>kind</key>
@@ -39,7 +39,7 @@
                         <true/>
                         <key>url</key>
                         <!-- 注意！这里是应用图标的图片路径 非全尺寸 可有可无 -->
-                        <string><![CDATA[http://bbdh5.papahuan.com:8084/resource/e-loan.56d068aa.png]]></string>
+                        <string><![CDATA[http://xxx.png]]></string>
                     </dict>
                 </array>
                 <key>metadata</key>
@@ -53,7 +53,7 @@
                     <string>software</string>
                     <key>title</key>
                     <!-- 注意！应用名称 -->
-                    <string><![CDATA[旅行e贷]]></string>
+                    <string><![CDATA[xxx]]></string>
                     <key>subtitle</key>
                     <!-- 注意！应用副标题 可有可无 -->
                     <string><![CDATA[APP]]></string>
